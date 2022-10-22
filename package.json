@@ -1,0 +1,24 @@
+{
+  "name": "katya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon ./excel/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex8023g/katya.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex8023g/katya/issues"
+  },
+  "homepage": "https://github.com/alex8023g/katya#readme",
+  "dependencies": {
+    "exceljs": "^4.3.0",
+    "nodemon": "^2.0.20"
+  }
+}
