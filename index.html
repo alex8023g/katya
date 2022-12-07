@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <div>
+      We are using Node.js <span id="node-version"></span>, Chromium
+      <span id="chrome-version"></span>, and Electron
+      <span id="electron-version"></span>.
+    </div>
+    <button type="button" id="btn1">Сервер</button>
+    <button type="button" id="btn2">Стенд</button>
+    <button type="button" id="btn3">Сравнить</button>
+    <h2>Разница между Сервером и стендом</h2>
+    <table id="table-1"></table>
+    <h2>Есть на стенде но нет на сервере</h2>
+    <table id="table-2"></table>
+    <!-- File path: <strong id="filePath"></strong> -->
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
