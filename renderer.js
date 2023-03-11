@@ -31,9 +31,11 @@ btn3.addEventListener('click', async () => {
     let td2 = document.createElement('td');
     td1.innerText = key;
     td2.innerText = rest.get(key);
-    tr.append(td1);
-    tr.append(td2);
-    table2.append(tr);
+    if (rest.get(key)) {
+      tr.append(td1);
+      tr.append(td2);
+      table2.append(tr);
+    }
   }
 });
 
